@@ -1,27 +1,87 @@
+/* Remove default margin and padding for the entire page */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 #header-lines {
     width: 100%;
-    display: flex;
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Align items in a row */
 }
 
 #header-lines div {
-    width: 100%;
-    height: 5px; 
+    flex-grow: 1; /* Ensure all lines take up equal space */
+    height: 5px;
 }
 
 #line-1 {
-    background-color: #4BAF47; 
+    background-color: #4BAF47;
 }
 
 #line-2 {
-    background-color: #C5CE38; 
+    background-color: #C5CE38;
 }
 
 #line-3 {
     background-color: #EEC044;
+}
+
+#social-header {
+    width: 60%;
+    height: 5rem;
+    margin: 0 auto;
+    background-color: rebeccapurple;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between logo and social icons */
+    padding: 0 1rem;
+}
+
+#social-header img {
+    height: 3.5rem;
+}
+
+#social-media-area {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center icons */
+}
+
+.social-media-rounded {
+    width: 2rem;
+    height: 2rem;
+    background-color: grey;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set icon color */
+}
+
+.social-media-rounded i {
+    color: white;
+}
+
+.social-media-rounded:hover {
+    background-color: #4BAF47; /* Change to desired hover color */
+}
+
+#social-media-area ul {
+    list-style-type: none; /* Remove list dots */
+    display: flex;
+    gap: 1rem; /* Adjust gap between icons as needed */
+    padding: 0;
+    margin: 0;
+}
+
+#social-media-area li {
+    display: inline; /* Ensure list items are inline */
 }
