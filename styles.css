@@ -1,4 +1,5 @@
-/* Remove default margin and padding for the entire page */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,16 +9,22 @@
 html, body {
     width: 100%;
     height: 100%;
+    font-family: 'Manrope', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
 }
 
 #header-lines {
     width: 100%;
-    display: flex; /* Use flexbox */
-    flex-direction: row; /* Align items in a row */
+    display: flex; 
+    flex-direction: row; 
 }
 
 #header-lines div {
-    flex-grow: 1; /* Ensure all lines take up equal space */
+    flex-grow: 1; 
     height: 5px;
 }
 
@@ -36,12 +43,11 @@ html, body {
 #social-header {
     width: 60%;
     height: 5rem;
-    margin: 0 auto;
-    background-color: rebeccapurple;
-    display: flex; /* Use flexbox */
-    align-items: center; /* Vertically center items */
-    justify-content: space-between; /* Space between logo and social icons */
-    padding: 0 1rem;
+    margin: auto auto;
+    background-color: rgb(228, 31, 31);
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 #social-header img {
@@ -49,10 +55,11 @@ html, body {
 }
 
 #social-media-area {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Vertically center icons */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%; 
 }
-
 .social-media-rounded {
     width: 2rem;
     height: 2rem;
@@ -62,8 +69,8 @@ html, body {
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease;
-    text-decoration: none; /* Remove underline from links */
-    color: white; /* Set icon color */
+    text-decoration: none; 
+    color: white; 
 }
 
 .social-media-rounded i {
@@ -71,17 +78,71 @@ html, body {
 }
 
 .social-media-rounded:hover {
-    background-color: #4BAF47; /* Change to desired hover color */
+    background-color: #4BAF47; 
+}
+
+#social-media-area {
+    display: flex;
+    margin-left: 1rem;
+    width: auto;
 }
 
 #social-media-area ul {
-    list-style-type: none; /* Remove list dots */
+    list-style-type: none;
+    gap: 1rem;
     display: flex;
-    gap: 1rem; /* Adjust gap between icons as needed */
-    padding: 0;
-    margin: 0;
 }
 
 #social-media-area li {
-    display: inline; /* Ensure list items are inline */
+    display: inline; 
+}
+
+#header-social-info {
+    display: flex;
+}
+
+#header-social-info ul {
+    list-style-type: none;
+    gap: 1rem;
+    display: flex;
+    width: auto;
+}
+
+
+#header-social-info li {
+    display: inline;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info-card img {
+    padding: 0.5rem;
+}
+
+.info-card div {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+
+}
+
+.info-card div h3 {
+    height: 0.2rem;
+    color: #878680;
+}
+
+.info-card div h1 {
+    height: 2rem;
+    font-size: 1.2rem;
+    color: #1F1E17;
+}
+
+#secondary-header {
+    background-color: #f8f7f1;
+    width: 100%;
+    height: 4rem;
 }
