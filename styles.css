@@ -10,6 +10,7 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: 'Manrope', sans-serif;
+    scroll-behavior: smooth;
 }
 
 #header-lines {
@@ -88,6 +89,10 @@ html, body {
 
 #social-media-area li {
     display: inline; 
+}
+
+.hamburger-menu {
+    display: none;
 }
 
 #header-social-info {
@@ -296,7 +301,6 @@ html, body {
 
 #text-area-1 {
     display: grid;
-    grid-template-columns: 1fr 500px 1fr;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -322,7 +326,7 @@ html, body {
 }
 
 #text-area-1 img {
-    grid-column: 2 / 3;
+    grid-column: 2 / 2;
     grid-row: 1 / span 4;
     width: 100%;
     height: 100%;
@@ -333,4 +337,62 @@ html, body {
 #text-area-1 .green-button {
     grid-column: 1 / 2;
     grid-row: auto;
+}
+
+#decoration-image-1 {
+    width: 100%;
+    margin-bottom: -1rem;
+}
+
+
+#text-area-2 > div {
+    background-color: #e9f1ee;
+    display: flex;
+    padding: 2rem;
+    justify-content: center; 
+    align-items: center; 
+    background-image: url("https://i.ibb.co/nCnT1jW/image.png");
+    background-repeat: no-repeat;
+    background-size: 30rem;
+    background-position: right top;
+}
+
+#text-area-2 > div{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+#text-area-2 > div > h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#text-area-2 > div > h2{
+    text-align: center;
+    color: #49A760;
+}
+
+#text-area-2 > div > div{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem
+}
+
+.card-info-2 {
+    display: flex; 
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 20rem; 
+    align-items: center;
+}
+
+.card-info-2 img{
+    width: 5rem;
+    background-color: #e9f1ee;
+    border-radius: 0.2rem;
+    justify-self: center; 
 }
