@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -30,13 +31,15 @@
                     </a>
                 </li>
                 <li>
-                    <a class="social-media-rounded hamburger-menu">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
+                    <button class="social-media-rounded" id="mobile-nav-toggle" aria-controls="header-social-info"
+                        aria-expanded="false">
+                        <span class="sr-only">Menu</span>
+                        <i class="fa fa-bars"></i>
+                    </button>
                 </li>
             </ul>
         </nav>
-        <div id="header-social-info">
+        <div data-visible="false" id="header-social-info">
             <ul>
                 <li>
                     <div class="info-card">
@@ -172,14 +175,14 @@
         <img id="decoration-image-1" src="https://i.ibb.co/w4VRrFp/image.png" alt="">
         <div>
             <h2>Átani</h2>
-            <h1>Queijos Finos direto do <br/>Produtor</h1>
+            <h1>Queijos Finos direto do <br />Produtor</h1>
             <div>
                 <div class="card-info-2">
                     <img src="https://i.ibb.co/CsNVQp0/image.png" alt="">
                     <h1>Agricultura</h1>
-                    <p>Descubra o ciclo completo da agricultura em  nossa jornada queijos artesanais. Cada 
+                    <p>Descubra o ciclo completo da agricultura em nossa jornada queijos artesanais. Cada
                         pedaço de queijo
-                        carrega consigo não apenas  o sabor da terra de onde vem, mas também a dedicação dos
+                        carrega consigo não apenas o sabor da terra de onde vem, mas também a dedicação dos
                         agricultores que
                         cuidam de suas pastagens.
                     </p>
@@ -187,16 +190,17 @@
                 <div class="card-info-2">
                     <img src="https://i.ibb.co/BNdcfDT/image.png" alt="">
                     <h1>Produção</h1>
-                    <p>Nosso queijo começa com o amor às vacas. Da  pastagem ao produto final, garantimos o 
+                    <p>Nosso queijo começa com o amor às vacas. Da pastagem ao produto final, garantimos o
                         bem-estar delas.
-                        Isso se reflete em cada pedaço,  preservando não só o sabor, mas nossa conexão com a
+                        Isso se reflete em cada pedaço, preservando não só o sabor, mas nossa conexão com a
                         natureza.
                     </p>
                 </div>
                 <div class="card-info-2">
                     <img src="https://i.ibb.co/Dt1Kyrx/image.png" alt="">
                     <h1>Nossos Animais</h1>
-                    <p>Com técnicas tradicionais, transformamos o leite fresco em queijos únicos, cheios de sabor.Do campo
+                    <p>Com técnicas tradicionais, transformamos o leite fresco em queijos únicos, cheios de sabor.Do
+                        campo
                         para sua mesa, é uma jornada de amor pela tradição. Venha saborear o resultado desse trabalho
                         dedicado.
                     </p>
@@ -204,6 +208,172 @@
             </div>
         </div>
         <img id="decoration-image-1" src="https://i.ibb.co/rt4ZsNv/image.png" alt="">
+    </section>
+    <section class="historia">
+        <img src="div.master-fancy-image.png" alt="Cirlei mostrando queijos">
+        
+        <h1>História</h1>
+        <h2>A História se faz com Nomes</h2>
+
+        <p>Nossa queijaria é sinônimo de excelência, enraizada na tradição rural e familiar. Nonna Lúcia Rossi </br>nos
+            legou suas receitas de queijos, herança de sua descendência italiana. É essa herança que </br>nos inspira a
+            criar os queijos autorais Donna Rossi e Nonna Lúcia, repletos de sabor e história.</p>
+        <p>Crescemos na roça, cuidando do gado e aprendendo a arte da produção de queijos, cultivando</br> um profundo
+            respeito pelo agronegócio e pelos animais. Após seguir outras profissões, nosso </br>coração nos trouxe de
+            volta à vida no campo, onde continuamos o legado familiar. </br>Com orgulho, transmitimos aos nossos filhos
+            o amor pelo trabalho rural e a paixão pelos queijos artesanais. </br>Cada pedaço que produzimos é uma
+            celebração </br> dessa rica tradição e dedicação.</p>
+        <div class="nomes">
+            <div class="nome-box-green">
+                <div class="letra-box">Á</div>
+                <span>Alexandre</span>
+            </div>
+            <div class="nome-box-yellow">
+                <div class="letra-box">TA</div>
+                <span>Taís</span>
+            </div>
+            <div class="nome-box-orange">
+                <div class="letra-box">NI</div>
+                <span>Nicole</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="livro">
+            <img id="livro" src="livro.png" alt="Livro">
+            <h1>Livro</h1>
+            <h2>O Que Levei Para Casa</h2>
+            <p>Descubra a história por trás dos sabores inesquecíveis da nossa queijaria familiar com o livro "O Que
+                Levei Para Casa". </br> Neste emocionante relato, acompanhe a trajetória de Nonna Lúcia Rossi, cuja
+                herança italiana e receitas tradicionais </br>deram origem aos nossos renomados queijos Donna Rossi e
+                Nonna Lúcia.</p>
+            <p>Adquira já o seu exemplar e embarque conosco nessa viagem deliciosa e inspiradora.</p>
+            <a href="#" class="btn">Contato</a>
+            <img id="seta" src="seta.svg" alt="seta" height="10" width="10">
+    </section>
+    <section id="product-area">
+        <h2>Serviços</h2>
+        <h1>Nossos Produtos</h1>
+        <div id="product-cards-area">
+            <div class="product-card">
+                <img src="https://i.ibb.co/Qcm94KT/image.png" alt="">
+                <div class="p-card-image">
+                    <img src="https://i.ibb.co/34VYJ4j/image.png" alt="">
+                </div>
+                <h1>Queijo Morbier Café</h1>
+                <p>O Queijo Morbier Café é uma deliciosa variação do tradicional Morbier, com uma camada de café.
+                    Com textura cremosa e sabor suave, é perfeito para tábuas de queijos e harmonizações com vinhos.
+                </p>
+            </div>
+            <div class="product-card">
+                <img src="https://i.ibb.co/c2t1SxL/image.png" alt="">
+                <div class="p-card-image">
+                    <img src="https://i.ibb.co/34VYJ4j/image.png" alt="">
+                </div>
+                <h1>Queijo Saint-Paulin</h1>
+                <p>O Queijo Saint-Paulin é um queijo semimole, suave e cremoso, com uma casca fina e macia. Feito com
+                    leite de vaca, possui um sabor delicado e ligeiramente amanteigado.
+                </p>
+            </div>
+            <div class="product-card">
+                <img src="https://i.ibb.co/m0Kgg8B/image.png" alt="">
+                <div class="p-card-image">
+                    <img src="https://i.ibb.co/wwkMc2v/image.png" alt="">
+                </div>
+                <h1>Queijo Donna Rossi</h1>
+                <p>O Queijo Autoral Donna Rossi, de origem brasileira, é uma verdadeira joia artesanal. Disponível nas
+                    versões maturado e fresco, cada uma oferece uma experiência única.
+                </p>
+            </div>
+            <div class="product-card">
+                <img src="https://i.ibb.co/gdfDghR/image.png" alt="">
+                <div class="p-card-image">
+                    <img src="https://i.ibb.co/FzpcMMw/image.png" alt="">
+                </div>
+                <h1>Queijo Nonna Lucia</h1>
+                <p>O Queijo Autoral Donna Rossi, de origem brasileira, é uma verdadeira joia artesanal. Disponível nas
+                    versões maturado e fresco, cada uma oferece uma experiência única.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="events-area">
+        <div id="area-container">
+            <img class="main-image" src="https://i.ibb.co/Nndyz2P/image.png" alt="">
+            <div class="event-details">
+                <div class="event-header">
+                    <h2>Eventos</h2>
+                    <h1>Reserve seu evento na Queijaria</h1>
+                </div>
+                <div class="info-events-cards">
+                    <div class="info-events-card">
+                        <div>
+                            <h5>Piquinique</h5>
+                            <p>Desfrute de um piquenique relaxante em meio à natureza, com nossos queijos artesanais,
+                                pães frescos e vinhos locais. Traga sua família e amigos para um dia inesquecível!</p>
+                        </div>
+                        <img class="green-background" src="https://i.ibb.co/VMKTPgn/image.png" alt="">
+                    </div>
+                    <div class="info-events-card">
+                        <div>
+                            <h5>Ensaio Fotográfico</h5>
+                            <p>Capture momentos especiais na nossa queijaria. Nosso cenário rústico é perfeito para
+                                ensaios de casamento, fotos de família e projetos artísticos.</p>
+                        </div>
+                        <img class="yellow-background" src="https://i.ibb.co/PYJQHYY/image.png" alt="">
+                    </div>
+                    <div class="info-events-card">
+                        <div>
+                            <h5>Excursão</h5>
+                            <p>Conheça o processo de produção dos nossos queijos em uma excursão guiada. Aprenda cada
+                                etapa, desde a ordenha até a maturação, e aproveite uma degustação exclusiva. Ideal para
+                                escolas e grupos turísticos.</p>
+                        </div>
+                        <img class="orange-background" src="https://i.ibb.co/FJHzgxc/image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="text-area-3">
+        <div>
+            <h2>Mídia</h2>
+            <h1>Últimas Notícias</h1>
+            <div>
+                <div class="card-info-3">
+                    <img src="img/noticia-1.svg" alt="">
+                    <div>
+                        <h1>Queijo com doutorado</h1>
+                        <p><a href="#" class="btn-card">Contato</a>
+                            <img id="seta" src="img/seta.svg" alt="seta" height="10" width="10">
+                        </p>
+                    </div>
+                </div>
+                <div class="card-info-3">
+                    <img src="img/noticia-2.svg" alt="">
+                    <div>
+                        <h1>Queijos Finos, um caso de amor (e de valor)</br></h1>
+                        <p><a href="#" class="btn-card">Contato</a>
+                            <img id="seta" src="img/seta.svg" alt="seta" height="10" width="10">
+                        </p>
+                    </div>
+                </div>
+                <div class="card-info-3">
+                    <img src="img/noticia-3.svg" alt="">
+                    <div>
+                        <h1>Queijarias toledanas passam a integrar a Rota do Queijo Paranaense</h1>
+                        <p><a href="#" class="btn-card">Contato</a>
+                            <img id="seta" src="img/seta.svg" alt="seta" height="10" width="10">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-verde">
+        <h1>Queijaria Átani</h1>
+        <p>Queijos Finos direto do produtor.</p>
+        <a class="orange-button" href="">Saiba Mais</a>
     </section>
 </body>
 
