@@ -20,6 +20,11 @@ body {
   overflow-x: hidden;
 }
 
+#header-selected > a > h1{
+  color: #1F1E17;
+  font-size: 1.2rem;
+}
+
 #mobile-nav-toggle {
   display: none;
 }
@@ -176,6 +181,10 @@ body {
   font-size: 0.75rem;
   color: #878680;
   text-decoration: none;
+}
+
+#secondary-header li a:hover {
+  color: #353534;
 }
 
 #landing-banner {
@@ -1083,6 +1092,345 @@ body {
     width: 50rem;
  }
 
+/* PAGE PRODUTOS */
+
+ #pd-page-section-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+ }
+
+ #pd-div-morbier {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+ }
+
+ #pd-div-morbier > img {
+  width: 40rem;;
+ }
+
+ #pd-div-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30rem;
+ }
+
+ #pd-div-text > h5 {
+  color: #7EB693;
+  font-family: "Yellowtail", cursive;
+  font-size: 1.5rem;
+ }
+
+ #pd-div-text > h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#pd-s-list h1 {
+  margin-bottom: 2rem;
+}
+
+#pd-s-list > ul {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#pd-s-list > ul > li {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  gap: 1rem;
+}
+
+#pd-s-list > ul > li > img {
+  width: 1rem;
+}
+
+/* */
+
+#pd-page-section-2 {
+  background-color: #e9f1ee;
+  display: flex;
+  flex-direction: column;
+}
+
+#pd-page-div-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+#pd-page-text-outros{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  margin-bottom: 4rem;
+}
+
+#pd-page-text-outros p{
+  text-align: center;
+}
+
+#pd-page-text-outros h5{
+  font-family: "Yellowtail", cursive;
+  font-size: 1.5rem;
+  color: #EEC044;
+}
+
+#pd-page-text-outros h1{
+  font-size: 2rem;
+}
+
+#pd-page-cards-area {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.pd-page-card {
+  background-color: white;
+  border-radius: 1.5rem;
+}
+
+.pd-page-card > img {
+  width: 20rem;
+}
+
+.pd-page-card > div {
+  width: 20rem;
+  padding: 2rem;
+}
+
+.pd-page-card > div > h1{
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #49A760;
+}
+
+/* PARCEIROS */
+
+#pc-main-section {
+  padding: 4rem;
+  background-color: #F8F7F1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#pc-main-section h5{
+  font-family: "Yellowtail", cursive;
+  font-size: 1.5rem;
+  color: #7EB693;
+}
+
+#pc-main-section h1{
+  font-size: 2rem;
+}
+
+#pc-cards-area {
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pc-card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-color-add img{
+  background-color:#b6b6b6;
+  width: 15rem;
+  padding: 2rem;
+  border-radius: 10rem;
+}
+
+#pc-comentario-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+#pc-comentario-section h5{
+  font-family: "Yellowtail", cursive;
+  font-size: 1.5rem;
+  color: #7EB693;
+}
+
+#pc-comentario-section > h1{
+  font-size: 2rem;
+}
+
+#pc-cards-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.pc-card-ratings{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 35rem;
+  border-radius: 2rem;
+  border-style: solid;
+  border-color: #6CB981;
+}
+
+
+.card-text-rating {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pc-card-ratings .cards-star {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+/* CONTATO */
+
+#ct-localizacao-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+#ct-local-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://i.ibb.co/DW9YFq8/image.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 70rem;
+  height: 38rem;
+}
+
+#ct-local-div > div{
+  display: flex;
+  background-color: white;
+  border-radius: 2rem;
+  height: 20rem;
+  width: 30rem;
+}
+
+#ct-local-div > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#ct-local-div > div > div > div{
+  display: flex;
+  flex-direction: column;
+}
+
+#ct-local-div > div > div > img {
+  width: 3rem;
+  height: 3rem;
+}
+
+#ct-local-div > div {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  text-align: left;
+}
+
+
+#ct-local-div > div > h5 {
+  color: #7EB693;
+}
+
+#ct-local-div > div > h1 {
+  font-size: 2rem;
+}
+
+#ct-map-area {
+  background-color: #003f11;
+  width: 70rem;
+  height: 38rem;
+  border-radius: 2rem;
+}
+
+#ct-map-area iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+/* POLITICA DE PRIVACIDADE */
+
+#pp-main-section {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#pp-header {
+  width: 20rem;
+  text-align: left;
+}
+
+#pp-header > h1 {
+  font-size: 2rem;
+}
+
+#pp-header > h5 {
+  font-size: 1.5rem;
+  color: #EEC044;
+  font-family: "Yellowtail", cursive;
+}
+
+#pp-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80rem;
+  gap: 2rem;
+}
+
+#pp-list ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
 @media (max-width: 768px) {
   #mobile-nav-toggle[aria-expanded="true"] {
     background-color: #003f11;
@@ -1268,11 +1616,27 @@ body {
     flex-direction: column;
   }
 
-  #sp-quality-text-area h1 {
-    font-size: auto;
+  #sp-quality-text-area > h1 {
+    font-size: 2rem;
   }
   .question-card > div{
     width: auto;
   }
+
+#area-quality > img {
+  width: 20rem;
+}
+
+/* PARCEIROS */
+
+.pc-card-ratings {
+  width: 20rem;
+}
+
+/* PP */
+
+#pp-list {
+  width: 20rem;
+}
 
 }
