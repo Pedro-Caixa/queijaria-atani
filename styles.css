@@ -1588,6 +1588,38 @@ body {
     padding-left: 0px;
   }
 
+  /* PAG PRODUTOS */
+
+  #pd-page-section-1 {
+    
+  }
+
+  #pd-div-morbier {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pd-div-morbier > img{
+    width: 20rem;
+  }
+
+  #pd-div-text {
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+  }
+
+  #pd-page-text-outros {
+    width: 20rem
+  }
+
+  #pd-page-cards-area {
+    justify-content: center;
+    width: 30rem;
+    flex-wrap: wrap;
+  }
+
   /* PÁGINA SOBRE */
 
   #sp-div-queijo > img {
