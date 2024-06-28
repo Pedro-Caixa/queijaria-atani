@@ -1299,6 +1299,7 @@ body {
   flex-direction: row;
   gap: 2rem;
   width: 35rem;
+  height: 15rem;
   border-radius: 2rem;
   border-style: solid;
   border-color: #6CB981;
