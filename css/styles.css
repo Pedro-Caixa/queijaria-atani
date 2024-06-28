@@ -288,6 +288,10 @@ body {
   list-style-type: none;
 }
 
+.card-icon > img{
+  width: 5rem;
+}
+
 .info-card-2 {
   display: flex;
   padding: 2rem;
